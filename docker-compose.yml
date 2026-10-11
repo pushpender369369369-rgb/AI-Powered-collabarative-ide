@@ -1,0 +1,9 @@
+services:
+  ide:
+    build: .
+    ports: ["3000:3000"]
+    env_file: .env
+    environment: { DATA_DIR: /data }
+    volumes: ["ide-data:/data"]
+    restart: unless-stopped
+volumes: { ide-data: {} }

@@ -1,0 +1,6 @@
+{
+  "name": "collab-ide-pro", "version": "1.0.0", "type": "module",
+  "scripts": { "dev": "concurrently -k \"node --env-file=.env server.js\" \"vite\"", "build": "vite build", "start": "node server.js" },
+  "dependencies": { "ws": "8.16.0", "y-websocket": "1.5.4", "y-leveldb": "0.1.2", "yjs": "13.6.8" },
+  "devDependencies": { "monaco-editor": "0.45.0", "y-monaco": "0.1.6", "qrcode": "1.5.3", "vite": "5.2.0", "concurrently": "8.2.2" }
+}
